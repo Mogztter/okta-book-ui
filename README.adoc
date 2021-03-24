@@ -1,0 +1,58 @@
+= Okta Book UI
+// Version
+:latest-version: v0.4.0
+// Settings
+:experimental:
+// GitHub
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Usage
+
+To use this UI with Antora, add the following configuration to your playbook file:
+
+[source,yml,subs=+attributes]
+----
+ui:
+  bundle:
+    url: https://github.com/Mogztter/mini-book-default-ui/releases/download/{latest-version}/ui-bundle.zip
+----
+
+== Installation
+
+In order to build the UI:
+
+[source,sh]
+npm i
+
+== Build
+
+To build the UI, run the build command:
+
+[source,sh]
+npm run build
+
+== Preview
+
+You can run a local server to preview the UI by running:
+
+[source,sh]
+npm start
+
+This will launch a server at http://localhost:5252.
+
+== Publish a new version
+
+The release process is automated and relies on GitHub Actions.
+See the `.github/workflows/release.yml` file for details.
+
+The release will be performed when a tag is pushed, the procedure is:
+
+. Tag and push to `main` (don't forget the `v` prefix and replace `x.y.z` with an actual version):
++
+ $ git tag vx.y.z && git push origin main --tags
