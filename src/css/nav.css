@@ -33,6 +33,7 @@
   position: relative;
   top: var(--toolbar-height);
   height: var(--nav-height);
+  border-right: 1px solid #e4e5e7;
 }
 
 @media screen and (min-width: 769px) {
@@ -43,7 +44,7 @@
 
 @media screen and (min-width: 1024px) {
   .nav {
-    top: var(--navbar-height);
+    top: calc(var(--toolbar-height) + 3.2rem);
     box-shadow: none;
     position: sticky;
     height: var(--nav-height--desktop);

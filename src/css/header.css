@@ -99,6 +99,7 @@ body {
 
 .navbar-item,
 .navbar-link {
+  font-size: 0.8rem;
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
