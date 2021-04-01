@@ -1,15 +1,124 @@
 footer.footer {
   background-color: var(--footer-background);
+  border-top: 1px solid #1f3b54;
   color: var(--footer-font-color);
   font-size: calc(15 / var(--rem-base) * 1rem);
   line-height: var(--footer-line-height);
-  padding: 1.5rem;
-}
-
-.footer p {
-  margin: 0.5rem 0;
+  padding: 80px 96px 80px 126px;
 }
 
 .footer a {
   color: var(--footer-link-font-color);
+}
+
+.link--underline {
+  text-decoration: underline;
+}
+
+footer .footer--columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer--columns .footer--column {
+  flex: 0 0 150px;
+}
+
+footer .footer--columns .footer--column .column--header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+footer ul.link-list {
+  margin-left: 0;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+footer ul.link-list li.link-list--item {
+  margin-top: 12px;
+}
+
+footer ul.link-list li.link-list--item a.link-list--link {
+  font-size: 16px;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+footer ul.link-list li.link-list--item i.link-list--icon + span.link-list--text {
+  margin-left: 16px;
+}
+
+footer p {
+  font-size: 20px;
+  line-height: 1.7em;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 66px;
+}
+
+footer .footer--columns .websites {
+  flex: 0 0 280px;
+}
+
+footer .footer--columns .websites .website {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer--columns .websites .website + .website {
+  margin-top: 40px;
+}
+
+/* link */
+
+footer a.link--spacing-large {
+  letter-spacing: 1.5px;
+}
+
+footer a.link--uppercase {
+  text-transform: uppercase;
+}
+
+footer a.link--bold {
+  font-weight: 700;
+}
+
+footer a.link--red {
+  color: #dd2864;
+}
+
+footer a.link[target=_blank]:not([href^="mailto:"])::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.2em;
+  background-image: url(../img/external--cherry.svg);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+footer .footer--columns .copyright {
+  flex: 0 0 180px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer .footer--columns .copyright span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.7em;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
 }

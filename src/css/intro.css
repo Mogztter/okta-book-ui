@@ -1,0 +1,45 @@
+.table-of-contents ol,
+.table-of-contents ul {
+  list-style-type: none !important;
+}
+
+.table-of-contents .ulist + .olist,
+.table-of-contents .olist + .ulist {
+  margin: 0 !important;
+}
+
+.table-of-contents ol > li::before {
+  display: inline-flex;
+  background-color: #e22866;
+  content: counter(list-item);
+  position: absolute;
+  margin-left: -1.5rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.table-of-contents ul > li::before {
+  display: inline-flex;
+  border: 2px solid #e22866;
+  content: "";
+  position: absolute;
+  margin-left: -1.5rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 0;
+}

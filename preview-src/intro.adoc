@@ -1,0 +1,26 @@
+= API Security
+:page-pagination: next
+:page-toclevels: -1
+
+[.lead]
+A guide to building and securing APIs from the developer team at Okta
+
+[.table-of-contents]
+== Table of Contents
+
+* xref:acknowledgments.adoc[]
+* xref:foreword.adoc[]
+
+[]
+
+. xref:transport-layer-security.adoc[]
+. xref:dos-mitigation-strategies.adoc[]
+. xref:sanitizing-data.adoc[]
+. xref:managing-api-credentials.adoc[]
+. xref:authentication.adoc[]
+. xref:authorization.adoc[]
+. xref:api-gateways.adoc[]
+
+[]
+
+* xref:about.adoc[]

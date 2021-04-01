@@ -110,6 +110,9 @@ page:
       - content: English + 中文
         url: '/xyz/5.2/index.html#english+中文'
         urlType: internal
+      - content: Introduction
+        url: /xyz/5.2/intro.html
+        urlType: internal
     - content: Liber Recusabo
       url: '#liber-recusabo'
       urlType: fragment
